@@ -4,7 +4,7 @@ public class InvoiceApp {
 
     public static void main(String[] args) {
         // welcome the user to the program
-        System.out.println("Welcome to the Invoice Total Calculator");
+        System.out.println("Welcome to the Invoice Total Calculator v2");
         System.out.println();  // print a blank line
 
         // create a Scanner object named sc
