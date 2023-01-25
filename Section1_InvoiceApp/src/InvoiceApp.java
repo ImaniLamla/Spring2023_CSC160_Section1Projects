@@ -1,3 +1,12 @@
+/*
+ Description:			This program uses the discount percent based on the amount that the user entered
+ 						to calculate how much they have to pay with that discount. It also allows the 
+ 						user to enter as many invoices as they want and displays a summary including the 
+ 						average invoice and average discount earned.
+ Programmer:			Imani Lamla 
+ Date:					24 January 2023
+ GitHub Repository URL: https://github.com/ImaniLamla/Spring2023_CSC160_Section1Projects.git
+ */
 import java.util.Scanner;
 
 public class InvoiceApp {
