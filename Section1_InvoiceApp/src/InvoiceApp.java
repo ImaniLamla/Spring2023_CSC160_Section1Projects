@@ -14,7 +14,8 @@ public class InvoiceApp {
     public static void main(String[] args) {
     	
     	//initialize variables for use in calculating averages
-    	int invoiceCount = 0;				//stores the number of invoices     
+    	int invoiceCount = 0;				//stores the number of invoices   
+    	int numLineItems = 0; 				//stores the number of line items the user will enter
     	
     	double discountAmount = 0.0;		//stores how much money gets deducted from the subtotal
     	double discountPercent = 0.0;		//stores the percentage of the user's discount based off the subtotal
@@ -27,18 +28,31 @@ public class InvoiceApp {
         Scanner sc = new Scanner(System.in);
         
         String choice = "y";				//stores the user's choice to either continue running the program or not
-        String input = "";					//will store the amount that the user has to pay in the invoice
+        String input = "";					//will temporarily hold the users input for number of line items and the subtotal for each line item
         String message = "";				//will store the summary of the user's invoices
         
-        // welcome the user to the program
+        //welcomes the user to the program
+        System.out.println("==========================================");
         System.out.println("Welcome to the Invoice Total Calculator v2");
+        System.out.println("==========================================");
+
         System.out.println();  // print a blank line
 
-        // perform invoice calculations until choice is "n" or "N" 
+        //perform invoice calculations until choice is "n" or "N" 
         while (!choice.equalsIgnoreCase("n")) {
-            // get the invoice subtotal from the user
+        	
+        	//get the number of line items the user will enter
+        	System.out.print("Enter the number of line items:	  ");
+        	input = sc.nextLine();
+        	System.out.println(input);//TODO
+        	numLineItems = Integer.parseInt(input);
+       
+        	
+        	
+            //get the invoice subtotal from the user
             System.out.print("Enter subtotal:   ");
             input = sc.nextLine();
+            System.out.println(input);//TODO
             subtotal = Double.parseDouble(input);
 
             // calculate the discount amount and total
