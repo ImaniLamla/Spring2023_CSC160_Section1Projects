@@ -8,7 +8,7 @@ Description:			This program calculates the total the user should pay for an invo
 						the end of the program which includes the number of invoices and the averages of all the invoices and discounts. 
 Progtammer's Name:		Imani Lamla
 Date Written:			2023.01.27
-GitHub Repository URL:	TODO 
+GitHub Repository URL:	https://github.com/ImaniLamla/Spring2023_CSC160_Section1Projects.git 
 ***********************************************************************************************************************************************************************************/
 
 public class InvoiceApp {
@@ -32,7 +32,6 @@ public class InvoiceApp {
 		
         
 		String choice = "y";						//stores the user's choice to either continue the program and add another invoice or end it
-		//String input = "";
 		
         // welcome the user to the program
 		System.out.println("*****************************************");
@@ -58,7 +57,7 @@ public class InvoiceApp {
 			}//end of for loop
 		
 
-            // calculate the discount amount and total
+            // uses the sumSubtotal to determine the discount percent then calculates the discount amount and total
             if (sumSubtotal >= 500) {
                 discountPercent = 0.25;
             } else if (subtotal >= 200) {
