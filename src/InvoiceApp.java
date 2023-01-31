@@ -76,10 +76,9 @@ public class InvoiceApp {
             invoiceCount = invoiceCount + 1;  
 
             // display the discount amount and total
-            String message = "Discount percent: " + discountPercent + "\n"
-                           + "Discount amount:  " + discountAmount + "\n"
-                           + "Invoice total:    " + discountInvoiceTotal + "\n";            
-            System.out.println(message);
+            System.out.printf("%20s: %,10.2f\n", "Subtotal", sumSubtotal);
+            System.out.printf("%20s: %,10.2f\n", "Discount amount", discountAmount);
+            System.out.printf("%20s: %,10.2f\n", "Invoice total", discountInvoiceTotal);            
 
 			sumSubtotal = 0.0; //clears the sum of the subtotals to start fresh when calculating the sum of the subtotals for the next invoice
 
@@ -94,9 +93,9 @@ public class InvoiceApp {
 		sc.close(); //closes the scanner object
         
         // calculate and display invoice count, average invoice, and average discount
-        String message = "Number of invoices: " + invoiceCount + "\n"
-                       + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
-                       + "Average discount:   " + discountTotal / invoiceCount + "\n";
-        System.out.println(message);
+		System.out.printf("%20s: %,10d\n", "Number of invoices", invoiceCount);
+		System.out.printf("%20s: %,10.2f\n", "Average invoice", invoiceTotal / invoiceCount);
+		System.out.printf("%20s: %,10.2f\n", "Average discount", discountTotal / invoiceCount);
+        
     }//end of main
 }//end of class
