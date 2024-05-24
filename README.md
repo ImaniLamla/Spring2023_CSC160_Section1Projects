@@ -1,2 +1,2 @@
-# Spring2023_CSC160_Section1Projects
-Stores all my Section 1 Projects for CSC 160
+# Spring2023_CSC160_Section1Project
+Stores my Section 1 Project for CSC 160. This is a simple Invoice program.
